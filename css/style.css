@@ -295,6 +295,10 @@ a:focus {
   padding-bottom: 90px;
 }
 
+.highlight-text{
+  color: #ff8a1d;
+}
+
 .slider_section .detail-box h1 {
   font-weight: bold;
   margin-bottom: 25px;
@@ -366,6 +370,10 @@ a:focus {
 .feature_section .feature_container .box .img-box {
   width: 90px;
   height: 90px;
+}
+
+service-highlight{
+  color: #ff8a1d;
 }
 
 .feature_section .feature_container .box .img-box svg {
