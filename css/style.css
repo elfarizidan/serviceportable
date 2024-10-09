@@ -4,6 +4,10 @@ body {
   color: #040000;
 }
 
+#result{
+  color: #000000;
+}
+
 .layout_padding {
   padding-top: 120px;
   padding-bottom: 120px;
