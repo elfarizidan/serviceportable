@@ -439,10 +439,10 @@
               <input type="text" placeholder="Phone Number" />
             </div>
             <div>
-              <input type="email" placeholder="Email" />
+              <input type="text" placeholder="Put your location here" />
             </div>
             <div>
-              <input type="text" class="message-box" placeholder="Message" />
+              <input type="text" class="message-box" placeholder="Message the problem with mechanics" />
             </div>
             <div class="d-flex ">
               <button>
@@ -456,7 +456,7 @@
             <div class="map">
               <div id="map" style="width:100%;height:100%;"></div>
               <script>
-                // Initialize map with default location
+                // Initialize map with default location (New York)
                 var map = L.map('map').setView([40.712775, -74.005973], 13);
           
                 // Load OpenStreetMap tiles
@@ -478,11 +478,15 @@
                     L.marker(userLocation).addTo(map)
                       .bindPopup("You are here!")
                       .openPopup();
+          
+                    // Display the latitude and longitude in the coordinates div
+                    document.getElementById('coordinates').innerHTML = 'Latitude: ' + userLat + '<br>Longitude: ' + userLng;
                   });
                 } else {
                   alert("Geolocation is not supported by this browser.");
                 }
               </script>
+              <div id="coordinates">Latitude: -<br>Longitude: -</div>
             </div>
           </div>
         </div>
